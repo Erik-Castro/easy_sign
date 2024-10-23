@@ -63,6 +63,8 @@ while [[ "$#" -gt 0 ]]; do
         ;;
     -c)
         OP_MODE="verify"
+	SAIDA_SIG="$2"
+	shift
         ;;
     *)
         FILE="$1"
